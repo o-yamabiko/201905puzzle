@@ -396,6 +396,11 @@
   grid-row: 3/6;
 }
 
+.crossword-board__item-highlight--down-5 {
+  grid-column: 3;
+  grid-row: 4/6;
+}
+
 .crossword-board__item-highlight--down-7 {
   grid-column: 2;
   grid-row: 5/9;
@@ -451,6 +456,11 @@
 
 #item3-7:valid ~ #item4-7:valid ~ #item5-7:valid
 ~ .crossword-board--highlight .crossword-board__item-highlight--down-4 {
+  opacity: 1;
+}
+
+#item4-3:valid ~ #item5-3:valid
+~ .crossword-board--highlight .crossword-board__item-highlight--down-5 {
   opacity: 1;
 }
 
@@ -815,6 +825,18 @@
   background: rgba(255, 255, 116, 0.5);
 }
 
+#item4-3:active ~ .crossword-clues .crossword-clues__list-item--down-5,
+#item4-3:focus ~ .crossword-clues .crossword-clues__list-item--down-5,
+#item4-3:hover ~ .crossword-clues .crossword-clues__list-item--down-5 {
+  background: rgba(255, 255, 116, 0.5);
+}
+
+#item5-3:active ~ .crossword-clues .crossword-clues__list-item--down-5,
+#item5-3:focus ~ .crossword-clues .crossword-clues__list-item--down-5,
+#item5-3:hover ~ .crossword-clues .crossword-clues__list-item--down-5 {
+  background: rgba(255, 255, 116, 0.5);
+}
+
 #item5-2:active ~ .crossword-clues .crossword-clues__list-item--down-7,
 #item5-2:focus ~ .crossword-clues .crossword-clues__list-item--down-7,
 #item5-2:hover ~ .crossword-clues .crossword-clues__list-item--down-7 {
@@ -1022,6 +1044,11 @@
 
 #item3-7:valid ~ #item4-7:valid ~ #item5-7:valid
 ~ .crossword-clues .crossword-clues__list-item--down-4 {
+  background: #F9B073;
+}
+
+#item4-3:valid ~ #item5-3:valid
+~ .crossword-clues .crossword-clues__list-item--down-5 {
   background: #F9B073;
 }
 
